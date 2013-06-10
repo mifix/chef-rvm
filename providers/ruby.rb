@@ -65,7 +65,7 @@ action :install do
           "Failed to install initial gemsets for rvm_ruby[#{@rubie}] ")
       end
     else
-      Chef::Log.warn("Failed to install rvm_ruby[#{@rubie}]. " +
+      Chef::Log.error("Failed to install rvm_ruby[#{@rubie}]. " +
         "Check logs in #{::RVM.path}/log/#{@rubie}")
     end
 
