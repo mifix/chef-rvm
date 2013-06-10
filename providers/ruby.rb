@@ -48,7 +48,7 @@ action :install do
 
     require 'pp'
     pp '--------------------------------------------------------'
-    pp @rvm_env.class
+    pp @rvm_env
     pp '--------------------------------------------------------'
 
     if @rvm_env.install(@rubie, install_options)
